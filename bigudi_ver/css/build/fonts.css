@@ -1,0 +1,10 @@
+/*Main Style*/
+.wrapper {
+  width: 1260px;
+  margin: auto;
+}
+.header {
+  background: url(../img/bg-header.jpg) top center;
+  height: 830px;
+}
+/*Main Style End*/

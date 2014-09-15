@@ -1,0 +1,10 @@
+{
+  "name": "default",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "latest",
+    "html5shiv": "latest",
+    "jquery.placeholder": "latest",
+    "animate.css": "latest"
+  }
+}

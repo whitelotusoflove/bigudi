@@ -1,0 +1,22 @@
+@-moz-document url-prefix(){
+
+	.footer .order input[type="text"]{
+		margin-bottom: 5px;
+	}
+	.footer .recall .btn{
+		padding: 8px 22px !important;
+	}
+}
+
+#ie8 .footer .order input[type="text"]{
+	margin-bottom: 5px;
+}
+
+#ie8 .info-popup,#ie8 .popup{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+	zoom: 1;
+}
+#ie8 .footer .recall{
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+	zoom: 1;
+}

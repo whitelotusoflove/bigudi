@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Спасибо!</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <style>
+    body{
+      background: url(img/bg-header.jpg) no-repeat;
+    }
+    .thanks{
+      width: 75%;
+      height: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .thanks img{
+      padding-top: 5%;
+      width: 100%;
+      min-width: 250px;
+      max-width: 500px;
+      display: block;
+      text-align: center;
+      margin: auto;
+    }
+    h1,h2{
+      color: #fff;
+      font-size: 36px;
+      text-align: center;
+      padding-top: 21px;
+      font-family: "helveticaneuecyrlight"; 
+    }
+    h1{
+      text-transform: uppercase;
+    }
+    h2{
+      font-size: 24px;
+      padding-top: 0px;
+      color: #11bcf6;
+    }
+    .btn{
+      display: block;
+      width: 270px;
+      margin: auto;
+      cursor: pointer;
+      border-radius: 7px;
+      background-clip: padding-box;
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOGRjZiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iODklIiBzdG9wLWNvbG9yPSIjNDBiY2Y2IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA4ZGNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+      background: url(../img/btn-mask.png) no-repeat, linear-gradient(bottom, #008dcf 0%, #40bcf6 89.36%, #008dcf 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008dcf', endColorstr='#008dcf',GradientType=0 );
+      background-size: 100% 100%;
+      float: left;
+      padding: 17px 21px;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    .btn span,.btn a{
+      color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold";
+    text-shadow: 1px 1px 0 rgba(0,0,0,1);
+    text-decoration: none;
+    }
+    .wrapper{
+      text-align: center;
+      margin: auto;
+      width: 327px;
+    }
+    @media screen and (max-width:400px){
+      h1,h2{
+        padding-top: 20px;
+      }
+      .btn{
+        margin-right: 0px;
+        position: relative;
+        left:-10%;
+      }
+      .wrapper{
+        margin: 0;
+        display: inline;
+      }
+      .logo{
+        width: 250px;
+      }  
+    }
+  </style>
+</head>
+<body>
+  <div class="thanks">
+    <img class="logo" src="img/logo.png" alt="">
+    <h1>Спасибо за заявку!</h1>
+    <h2>Наш сотрудник скоро свяжется с вами</h2>
+    <div class="wrapper">
+      <div class="btn">
+        <a href="index.html">Вернуться на сайт</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

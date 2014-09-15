@@ -1,0 +1,1 @@
+ajaxmin ./production/build/style.css -o ./production/build/style.min.css
