@@ -2988,21 +2988,28 @@ body {
 .header .bigudi_pic {
   position: absolute;
   top: 430px;
-  left: 360px;
+  left: 395px;
 }
 
 .header .bigudi_pic img {
-  width: 450px;
-  transition: width 3s;
+  width: 350px;
 }
-
-.header .bigudi_pic img:hover {
-  width: 500px;
+.header .contacts .contact_number{
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  color: white;
+  font-family: "OpenSans-Extrabold", sans-serif;
+  font-size: 40px;
+  text-shadow: 1px 1px 4px black;
+  text-transform: uppercase;
+  line-height: 28px;
+  min-height: 90px;
 }
 
 .header .recall_btn {
   position: absolute;
-  top: -5px;
+  top: 50px;
   right: 18px;
   font-size: 20px;
   background: url("../img/btn-mask-down.png") no-repeat, -webkit-gradient(linear, left bottom, left top, from(#008dcf), color-stop(89.36%, #40bcf6), to(#008dcf));
@@ -3419,6 +3426,24 @@ body {
   -webkit-border-radius: 9px;
           border-radius: 9px;
   overflow: hidden;
+
+}
+
+.result {
+  perspective: 1200px;
+}
+.result .image {
+  transform-style: preserve-3d;
+  transition: all .7s;
+}
+
+.result:hover .image {transform: rotateY(5deg);}
+
+.result .image:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 36px;
+  transform: rotateX(90deg); transform-origin: bottom;
 }
 
 .c2 .result .arrows {
@@ -3663,7 +3688,7 @@ body {
 }
 
 .c4 .title {
-  font-size: 60px;
+  font-size: 30px;
   font-family: "MinionPro-Regular";
   color: #443d3d;
   text-align: center;
@@ -3673,7 +3698,17 @@ body {
   padding-bottom: 30px;
 }
 
+.c4 .sub {
+  font-size: 50px;
+  font-family: "MinionPro-Regular";
+  color: #443d3d;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .c4 .bigudi {
+  padding-top: 40px;
   padding-left: 0px;
 }
 
@@ -3804,8 +3839,8 @@ body {
 }
 
 .c4 .btn.buy {
-  margin-top: 67px;
-  margin-left: 22px;
+  margin-top: 50px;
+  margin-left: 200px;
   padding: 20px 30px;
 }
 
@@ -3865,7 +3900,7 @@ body {
 }
 
 .footer .pay img:hover {
-  width:200px;
+  width:170px;
 }
 
 .footer .order {
@@ -4077,7 +4112,7 @@ body {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to bottom, rgba(63,76,107,0.5) 0%,rgba(63,76,107,0.5) 100%);
   padding: 20px;
   width: 300px;
 }
@@ -4121,6 +4156,7 @@ body {
 
 .popup form .close {
   position: absolute;
+  font-size: 14px;
   right: -5px;
   top: -5px;
   font-size: 14px;

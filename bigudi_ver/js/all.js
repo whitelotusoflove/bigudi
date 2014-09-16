@@ -923,13 +923,22 @@ b.trim(a.val()).length>0||(a.is(":password")?(c=a.attr("id")+"-clone",d=b("<inpu
 $(document).ready(function(){
 
 	// Таймер
-	var year = $(".count").attr("data-year"),
-			month = $(".count").attr("data-month"),
-			day = $(".count").attr("data-day"),
-			hour = $(".count").attr("data-hour"),
-			minutes = $(".count").attr("data-minutes"),
-			seconds = $(".count").attr("data-seconds");
-  var newDate = new Date(year,month,day,hour,minutes,seconds); 
+
+	//var year = year+$(".count").attr("data-year"),
+	//	month = month+$(".count").attr("data-month"),
+	//	day = day+$(".count").attr("data-day"),
+	//	hour = hour+$(".count").attr("data-hour"),
+	//	minutes = minutes+$(".count").attr("data-minutes"),
+	//	seconds = seconds+$(".count").attr("data-seconds");
+	var newDate = new Date();
+	parseInt()
+	var year = newDate.getFullYear(),
+			month = newDate.getMonth(),
+			day = newDate.getDate(),
+			hour = newDate.getHours()+$(".count").attr("data-hour"),
+			minutes = newDate.getMinutes(),
+			seconds = newDate.getSeconds();
+	console.log(newDate)
 	$('.count').countdown({until: newDate});
 
   // Слайдер
